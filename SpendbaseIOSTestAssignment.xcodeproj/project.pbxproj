@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52FC5AA82C106070003991AD /* SpendbaseIOSTestAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AA72C106070003991AD /* SpendbaseIOSTestAssignmentApp.swift */; };
+		52FC5AAC2C106071003991AD /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FC5AAB2C106071003991AD /* Image.xcassets */; };
+		52FC5AAF2C106071003991AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FC5AAE2C106071003991AD /* Preview Assets.xcassets */; };
+		52FC5ABF2C106D61003991AD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5ABE2C106D61003991AD /* Card.swift */; };
+		52FC5AC12C106E25003991AD /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AC02C106E25003991AD /* Transaction.swift */; };
+		52FC5AC32C107072003991AD /* CardNetworService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AC22C107072003991AD /* CardNetworService.swift */; };
+		52FC5AC52C107CD6003991AD /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AC42C107CD6003991AD /* Balance.swift */; };
+		52FC5ACB2C108647003991AD /* CardNetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5ACA2C108647003991AD /* CardNetworkInterface.swift */; };
+		52FC5AD02C10A1B3003991AD /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FC5ACF2C10A1B3003991AD /* Color.xcassets */; };
+		52FC5AD22C10A24C003991AD /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AD12C10A24C003991AD /* HomeScreenView.swift */; };
+		52FC5AD72C10AA0A003991AD /* AppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AD62C10AA0A003991AD /* AppScreen.swift */; };
+		52FC5ADC2C10AC87003991AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5ADB2C10AC87003991AD /* ContentView.swift */; };
+		52FC5ADF2C10ADA0003991AD /* TransactiosScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5ADE2C10ADA0003991AD /* TransactiosScreenView.swift */; };
+		52FC5AE12C10ADB7003991AD /* MyCardsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AE02C10ADB7003991AD /* MyCardsScreenView.swift */; };
+		52FC5AE32C10ADC9003991AD /* AccountScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AE22C10ADC9003991AD /* AccountScreenView.swift */; };
+		52FC5AE52C10B75F003991AD /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AE42C10B75F003991AD /* BalanceView.swift */; };
+		52FC5AE92C10B976003991AD /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AE82C10B976003991AD /* Currency.swift */; };
+		52FC5AEB2C10C348003991AD /* HomeScreenView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AEA2C10C348003991AD /* HomeScreenView+ViewModel.swift */; };
+		52FC5AED2C10CB20003991AD /* MockTeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AEC2C10CB20003991AD /* MockTeamModel.swift */; };
+		52FC5AEF2C10D389003991AD /* Cards.Account.Total-balance.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FC5AB62C106122003991AD /* Cards.Account.Total-balance.json */; };
+		52FC5AF02C10D389003991AD /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FC5AB92C1061A2003991AD /* Cards.json */; };
+		52FC5AF12C10D389003991AD /* Cards.Transactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FC5ABB2C1061E2003991AD /* Cards.Transactions.json */; };
+		52FC5AF82C10DAB3003991AD /* MyCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AF72C10DAB3003991AD /* MyCardsView.swift */; };
+		52FC5AFA2C10DD75003991AD /* CardPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AF92C10DD75003991AD /* CardPreviewView.swift */; };
+		52FC5AFC2C10F332003991AD /* RecentTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AFB2C10F332003991AD /* RecentTransactionsView.swift */; };
+		52FC5B002C10F58F003991AD /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5AFF2C10F58F003991AD /* TransactionView.swift */; };
+		52FC5B032C11ABD2003991AD /* TransferScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5B022C11ABD2003991AD /* TransferScreenView.swift */; };
+		52FC5B062C11B77C003991AD /* Locale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5B052C11B77C003991AD /* Locale+Extension.swift */; };
+		52FC5B0C2C11D898003991AD /* CurrencyUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5B0B2C11D898003991AD /* CurrencyUITextField.swift */; };
+		52FC5B112C11FF49003991AD /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5B102C11FF49003991AD /* PreviewData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52FC5AA42C106070003991AD /* SpendbaseIOSTestAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendbaseIOSTestAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FC5AA72C106070003991AD /* SpendbaseIOSTestAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendbaseIOSTestAssignmentApp.swift; sourceTree = "<group>"; };
+		52FC5AAB2C106071003991AD /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		52FC5AAE2C106071003991AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52FC5AB62C106122003991AD /* Cards.Account.Total-balance.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Cards.Account.Total-balance.json"; sourceTree = "<group>"; };
+		52FC5AB92C1061A2003991AD /* Cards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cards.json; sourceTree = "<group>"; };
+		52FC5ABB2C1061E2003991AD /* Cards.Transactions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cards.Transactions.json; sourceTree = "<group>"; };
+		52FC5ABE2C106D61003991AD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		52FC5AC02C106E25003991AD /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		52FC5AC22C107072003991AD /* CardNetworService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNetworService.swift; sourceTree = "<group>"; };
+		52FC5AC42C107CD6003991AD /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		52FC5ACA2C108647003991AD /* CardNetworkInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNetworkInterface.swift; sourceTree = "<group>"; };
+		52FC5ACF2C10A1B3003991AD /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		52FC5AD12C10A24C003991AD /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		52FC5AD62C10AA0A003991AD /* AppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
+		52FC5ADB2C10AC87003991AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52FC5ADE2C10ADA0003991AD /* TransactiosScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactiosScreenView.swift; sourceTree = "<group>"; };
+		52FC5AE02C10ADB7003991AD /* MyCardsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsScreenView.swift; sourceTree = "<group>"; };
+		52FC5AE22C10ADC9003991AD /* AccountScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreenView.swift; sourceTree = "<group>"; };
+		52FC5AE42C10B75F003991AD /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		52FC5AE82C10B976003991AD /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		52FC5AEA2C10C348003991AD /* HomeScreenView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeScreenView+ViewModel.swift"; sourceTree = "<group>"; };
+		52FC5AEC2C10CB20003991AD /* MockTeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTeamModel.swift; sourceTree = "<group>"; };
+		52FC5AF72C10DAB3003991AD /* MyCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsView.swift; sourceTree = "<group>"; };
+		52FC5AF92C10DD75003991AD /* CardPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPreviewView.swift; sourceTree = "<group>"; };
+		52FC5AFB2C10F332003991AD /* RecentTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionsView.swift; sourceTree = "<group>"; };
+		52FC5AFF2C10F58F003991AD /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		52FC5B022C11ABD2003991AD /* TransferScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreenView.swift; sourceTree = "<group>"; };
+		52FC5B052C11B77C003991AD /* Locale+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+Extension.swift"; sourceTree = "<group>"; };
+		52FC5B0B2C11D898003991AD /* CurrencyUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyUITextField.swift; sourceTree = "<group>"; };
+		52FC5B102C11FF49003991AD /* PreviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52FC5AA12C106070003991AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52FC5A9B2C106070003991AD = {
+			isa = PBXGroup;
+			children = (
+				52FC5AA62C106070003991AD /* SpendbaseIOSTestAssignment */,
+				52FC5AA52C106070003991AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52FC5AA52C106070003991AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AA42C106070003991AD /* SpendbaseIOSTestAssignment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52FC5AA62C106070003991AD /* SpendbaseIOSTestAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AA72C106070003991AD /* SpendbaseIOSTestAssignmentApp.swift */,
+				52FC5ADB2C10AC87003991AD /* ContentView.swift */,
+				52FC5ADA2C10AC76003991AD /* App */,
+				52FC5ADD2C10AD2C003991AD /* Screens */,
+				52FC5AC92C1085DA003991AD /* Services */,
+				52FC5ABD2C106CF5003991AD /* Models */,
+				52FC5B042C11B764003991AD /* Extensions */,
+				52FC5ACE2C10A180003991AD /* Assets */,
+				52FC5AAD2C106071003991AD /* Preview Content */,
+			);
+			path = SpendbaseIOSTestAssignment;
+			sourceTree = "<group>";
+		};
+		52FC5AAD2C106071003991AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5B0D2C11FEA8003991AD /* Preview Data */,
+				52FC5AB52C1060DC003991AD /* Json */,
+				52FC5AAE2C106071003991AD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52FC5AB52C1060DC003991AD /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AB82C10618C003991AD /* GET */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		52FC5AB82C10618C003991AD /* GET */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AB62C106122003991AD /* Cards.Account.Total-balance.json */,
+				52FC5AB92C1061A2003991AD /* Cards.json */,
+				52FC5ABB2C1061E2003991AD /* Cards.Transactions.json */,
+			);
+			path = GET;
+			sourceTree = "<group>";
+		};
+		52FC5ABD2C106CF5003991AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AC42C107CD6003991AD /* Balance.swift */,
+				52FC5ABE2C106D61003991AD /* Card.swift */,
+				52FC5AC02C106E25003991AD /* Transaction.swift */,
+				52FC5AEE2C10CB2A003991AD /* Mock */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52FC5AC92C1085DA003991AD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AE72C10B90B003991AD /* Currency */,
+				52FC5AE62C10B8FC003991AD /* CardNetwork */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		52FC5ACE2C10A180003991AD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AAB2C106071003991AD /* Image.xcassets */,
+				52FC5ACF2C10A1B3003991AD /* Color.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		52FC5ADA2C10AC76003991AD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AD62C10AA0A003991AD /* AppScreen.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		52FC5ADD2C10AD2C003991AD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AF22C10DA63003991AD /* HomeScreenView */,
+				52FC5AF32C10DA74003991AD /* TransactiosScreenView */,
+				52FC5AF42C10DA79003991AD /* MyCardsScreenView */,
+				52FC5AF52C10DA88003991AD /* AccountScreenView */,
+				52FC5B012C11AB84003991AD /* TransferScreenView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		52FC5AE62C10B8FC003991AD /* CardNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AC22C107072003991AD /* CardNetworService.swift */,
+				52FC5ACA2C108647003991AD /* CardNetworkInterface.swift */,
+			);
+			path = CardNetwork;
+			sourceTree = "<group>";
+		};
+		52FC5AE72C10B90B003991AD /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AE82C10B976003991AD /* Currency.swift */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		52FC5AEE2C10CB2A003991AD /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AEC2C10CB20003991AD /* MockTeamModel.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		52FC5AF22C10DA63003991AD /* HomeScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AD12C10A24C003991AD /* HomeScreenView.swift */,
+				52FC5AEA2C10C348003991AD /* HomeScreenView+ViewModel.swift */,
+				52FC5AF62C10DA92003991AD /* Views */,
+			);
+			path = HomeScreenView;
+			sourceTree = "<group>";
+		};
+		52FC5AF32C10DA74003991AD /* TransactiosScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5ADE2C10ADA0003991AD /* TransactiosScreenView.swift */,
+			);
+			path = TransactiosScreenView;
+			sourceTree = "<group>";
+		};
+		52FC5AF42C10DA79003991AD /* MyCardsScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AE02C10ADB7003991AD /* MyCardsScreenView.swift */,
+			);
+			path = MyCardsScreenView;
+			sourceTree = "<group>";
+		};
+		52FC5AF52C10DA88003991AD /* AccountScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AE22C10ADC9003991AD /* AccountScreenView.swift */,
+			);
+			path = AccountScreenView;
+			sourceTree = "<group>";
+		};
+		52FC5AF62C10DA92003991AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5B0B2C11D898003991AD /* CurrencyUITextField.swift */,
+				52FC5AE42C10B75F003991AD /* BalanceView.swift */,
+				52FC5AFD2C10F4D2003991AD /* MyCardsView */,
+				52FC5AFE2C10F4E2003991AD /* RecentTransactionsView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52FC5AFD2C10F4D2003991AD /* MyCardsView */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AF72C10DAB3003991AD /* MyCardsView.swift */,
+				52FC5AF92C10DD75003991AD /* CardPreviewView.swift */,
+			);
+			path = MyCardsView;
+			sourceTree = "<group>";
+		};
+		52FC5AFE2C10F4E2003991AD /* RecentTransactionsView */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5AFB2C10F332003991AD /* RecentTransactionsView.swift */,
+				52FC5AFF2C10F58F003991AD /* TransactionView.swift */,
+			);
+			path = RecentTransactionsView;
+			sourceTree = "<group>";
+		};
+		52FC5B012C11AB84003991AD /* TransferScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5B022C11ABD2003991AD /* TransferScreenView.swift */,
+			);
+			path = TransferScreenView;
+			sourceTree = "<group>";
+		};
+		52FC5B042C11B764003991AD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5B052C11B77C003991AD /* Locale+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		52FC5B0D2C11FEA8003991AD /* Preview Data */ = {
+			isa = PBXGroup;
+			children = (
+				52FC5B102C11FF49003991AD /* PreviewData.swift */,
+			);
+			path = "Preview Data";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52FC5AA32C106070003991AD /* SpendbaseIOSTestAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FC5AB22C106071003991AD /* Build configuration list for PBXNativeTarget "SpendbaseIOSTestAssignment" */;
+			buildPhases = (
+				52FC5AA02C106070003991AD /* Sources */,
+				52FC5AA12C106070003991AD /* Frameworks */,
+				52FC5AA22C106070003991AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpendbaseIOSTestAssignment;
+			productName = SpendbaseIOSTestAssignment;
+			productReference = 52FC5AA42C106070003991AD /* SpendbaseIOSTestAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52FC5A9C2C106070003991AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					52FC5AA32C106070003991AD = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 52FC5A9F2C106070003991AD /* Build configuration list for PBXProject "SpendbaseIOSTestAssignment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52FC5A9B2C106070003991AD;
+			productRefGroup = 52FC5AA52C106070003991AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52FC5AA32C106070003991AD /* SpendbaseIOSTestAssignment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52FC5AA22C106070003991AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FC5AEF2C10D389003991AD /* Cards.Account.Total-balance.json in Resources */,
+				52FC5AF02C10D389003991AD /* Cards.json in Resources */,
+				52FC5AF12C10D389003991AD /* Cards.Transactions.json in Resources */,
+				52FC5AAF2C106071003991AD /* Preview Assets.xcassets in Resources */,
+				52FC5AAC2C106071003991AD /* Image.xcassets in Resources */,
+				52FC5AD02C10A1B3003991AD /* Color.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52FC5AA02C106070003991AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FC5AEB2C10C348003991AD /* HomeScreenView+ViewModel.swift in Sources */,
+				52FC5AE12C10ADB7003991AD /* MyCardsScreenView.swift in Sources */,
+				52FC5AED2C10CB20003991AD /* MockTeamModel.swift in Sources */,
+				52FC5ADC2C10AC87003991AD /* ContentView.swift in Sources */,
+				52FC5AC32C107072003991AD /* CardNetworService.swift in Sources */,
+				52FC5AC12C106E25003991AD /* Transaction.swift in Sources */,
+				52FC5ACB2C108647003991AD /* CardNetworkInterface.swift in Sources */,
+				52FC5AD22C10A24C003991AD /* HomeScreenView.swift in Sources */,
+				52FC5B112C11FF49003991AD /* PreviewData.swift in Sources */,
+				52FC5AE92C10B976003991AD /* Currency.swift in Sources */,
+				52FC5ABF2C106D61003991AD /* Card.swift in Sources */,
+				52FC5AC52C107CD6003991AD /* Balance.swift in Sources */,
+				52FC5AA82C106070003991AD /* SpendbaseIOSTestAssignmentApp.swift in Sources */,
+				52FC5AE32C10ADC9003991AD /* AccountScreenView.swift in Sources */,
+				52FC5B062C11B77C003991AD /* Locale+Extension.swift in Sources */,
+				52FC5AF82C10DAB3003991AD /* MyCardsView.swift in Sources */,
+				52FC5B0C2C11D898003991AD /* CurrencyUITextField.swift in Sources */,
+				52FC5AFC2C10F332003991AD /* RecentTransactionsView.swift in Sources */,
+				52FC5B032C11ABD2003991AD /* TransferScreenView.swift in Sources */,
+				52FC5ADF2C10ADA0003991AD /* TransactiosScreenView.swift in Sources */,
+				52FC5AD72C10AA0A003991AD /* AppScreen.swift in Sources */,
+				52FC5B002C10F58F003991AD /* TransactionView.swift in Sources */,
+				52FC5AE52C10B75F003991AD /* BalanceView.swift in Sources */,
+				52FC5AFA2C10DD75003991AD /* CardPreviewView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		52FC5AB02C106071003991AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52FC5AB12C106071003991AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52FC5AB32C106071003991AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpendbaseIOSTestAssignment/Preview Content\"";
+				DEVELOPMENT_TEAM = 4P92Y33YJZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ReverseLab.SpendbaseIOSTestAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52FC5AB42C106071003991AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpendbaseIOSTestAssignment/Preview Content\"";
+				DEVELOPMENT_TEAM = 4P92Y33YJZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ReverseLab.SpendbaseIOSTestAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52FC5A9F2C106070003991AD /* Build configuration list for PBXProject "SpendbaseIOSTestAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FC5AB02C106071003991AD /* Debug */,
+				52FC5AB12C106071003991AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FC5AB22C106071003991AD /* Build configuration list for PBXNativeTarget "SpendbaseIOSTestAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FC5AB32C106071003991AD /* Debug */,
+				52FC5AB42C106071003991AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52FC5A9C2C106070003991AD /* Project object */;
+}

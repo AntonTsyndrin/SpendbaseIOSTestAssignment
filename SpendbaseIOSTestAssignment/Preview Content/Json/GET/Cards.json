@@ -1,0 +1,58 @@
+{
+"cards": [
+    {
+        "id": "987654321",
+        "cardLast4": "4141",
+        "cardName": "Virtual card",
+        "isLocked": false,
+        "isTerminated": false,
+        "spent": 500,
+        "limit": 1500,
+        "limitType": "PerMonth",
+        "cardHolder": {
+            "id": "123",
+            "fullName": "John Doe",
+            "email": "johndoe@example.com",
+            "logoUrl": "https://example.com/logo.png"
+        },
+        "fundingSource": "ACH",
+        "issuedAt": "2024-05-06T08:24:49.897Z"
+    },
+    {
+        "id": "987654335",
+        "cardLast4": "4141",
+        "cardName": "Slack",
+        "isLocked": false,
+        "isTerminated": false,
+        "spent": 50,
+        "limit": 200,
+        "limitType": "PerMonth",
+        "cardHolder": {
+            "id": "456",
+            "fullName": "John Doe",
+            "email": "johndoe@example.com",
+            "logoUrl": "https://example.com/logo.png"
+        },
+        "fundingSource": "ACH",
+        "issuedAt": "2024-05-06T08:20:30.897Z"
+    },
+    {
+        "id": "987654392",
+        "cardLast4": "4141",
+        "cardName": "Google",
+        "isLocked": false,
+        "isTerminated": false,
+        "spent": 30,
+        "limit": 200,
+        "limitType": "PerMonth",
+        "cardHolder": {
+            "id": "789",
+            "fullName": "John Doe",
+            "email": "johndoe@example.com",
+            "logoUrl": "https://example.com/logo.png"
+        },
+        "fundingSource": "ACH",
+        "issuedAt": "2024-05-06T06:05:12.897Z"
+    }
+]
+}

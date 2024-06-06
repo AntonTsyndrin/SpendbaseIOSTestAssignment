@@ -1,0 +1,35 @@
+[
+    {
+        "id": "TXN20240605",
+        "tribeTransactionId": "202406051234567890",
+        "tribeCardId": 0,
+        "amount": "1000",
+        "status": "PENDING",
+        "tribeTransactionType": "TOPUP",
+        "schemeId": "Visa",
+        "merchantName": "Google",
+        "pan": "**** **** **** 4141"
+    },
+    {
+        "id": "TXN20240652",
+        "tribeTransactionId": "202406051234560000",
+        "tribeCardId": 1234567890,
+        "amount": "500",
+        "status": "COMPLETED",
+        "tribeTransactionType": "PURCHASE",
+        "schemeId": "Mastercard",
+        "merchantName": "Google",
+        "pan": "**** **** **** 4141"
+    },
+    {
+        "id": "TXN20241456",
+        "tribeTransactionId": "202406051234561122",
+        "tribeCardId": 1234567890,
+        "amount": "1299",
+        "status": "DECLINED",
+        "tribeTransactionType": "PURCHASE",
+        "schemeId": "American Express",
+        "merchantName": "Google",
+        "pan": "**** **** **** 4141"
+    }
+]
